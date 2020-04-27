@@ -100,7 +100,7 @@ app.get("/user/:name/:age", (request, response) => {
   }
 });
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 function onListen() {
   console.log(`Listen on port ${port}`);
